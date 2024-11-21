@@ -419,9 +419,47 @@ footer {
    }
    .header_titles {
     display: block;
-    
    }
-
+   .header_titles ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+   }
+  .links {
+    width: 288px;
+  }
+  .links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    display: block;
+  }
+  .links a:hover {
+    color: #FFFFFF4D;
+  }
+  .etalon {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 40px;
+  }
+  .basket_screen img {
+    display: block;
+  }
+  .basket_screen a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 12px;
+    background-color: #FDDE67;
+  }
+  .special_marks img {
+    object-fit: ;
+  }
 
 
 
