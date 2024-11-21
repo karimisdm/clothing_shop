@@ -117,11 +117,12 @@ body {
     background-color: #C5C2CA;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
 }
 .jacket_collection img {
-    display: inline-block;
+    display: block;
     margin-left: 20%;
-    margin-top: 10%;
+    margin-top: 16%;
 }
 .jacket_collection p {
     font-size: 18px;
@@ -136,7 +137,6 @@ body {
     background-color: #FDDE67;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 32px;
     display: flex;
     justify-content: space-around;
 }
@@ -153,8 +153,8 @@ body {
     margin-left: -40px;
 }
 .model_sunglass img {
-    margin-top: 28px;
-    display: inline-block;    
+    display: block; 
+    margin-top: 25px;   
 }
 .text_sunglass {
     padding-left: 15px;
@@ -279,6 +279,8 @@ body {
 footer {
     background-color:#3B5F47;
     text-align: center;
+}
+.last_section {
     padding-bottom: 32px;
 }
 .text_sale {
@@ -297,7 +299,6 @@ footer {
 }
 .date {
     width: 330px;
-    height: 82px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -325,6 +326,9 @@ footer {
     display: none;
 }
 .header_titles{
+    display: none;
+}
+.yellow_footer {
     display: none;
 }
 
@@ -457,9 +461,99 @@ footer {
     padding: 12px;
     background-color: #FDDE67;
   }
-  .special_marks img {
-    object-fit: ;
+  .special_marks li:nth-child(1) img {
+    width: 165px;
   }
+  .special_marks li:nth-child(2) img {
+    width: 258px;
+  }
+  .special_marks li:nth-child(3) img {
+    width: 112px;
+  }
+  .special_marks li:nth-child(4) img {
+    width: 60px;
+  }
+  .special_marks li:nth-child(5) img {
+    width: 166px;
+  }
+  .special_marks li:nth-child(6) img {
+    width: 145px;
+  }
+  .best_clothes {
+    overflow: hidden;
+  }
+  footer {
+    display: flex;
+  }
+  .last_section {
+    flex-grow: 2;
+    padding-bottom: 80px;
+    padding-top: 90px;
+  }
+  .yellow_footer {
+    display: block;
+    background-color: #FDDE67;
+    position: relative;
+    width: 35%;
+  }
+  .yellow_footer img {
+    position: absolute;
+    left: 50px;
+    top: 90px;
+  }
+  .big_off {
+    font-family: Roboto;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 48px;
+    color: black;
+    position: absolute;
+    left: 60px;
+    top: 25px;
+  }
+  .text_sale {
+    font-size: 64px;
+  }
+  .date {
+    font-size: 64px;
+  }
+  .date_box {
+    font-size: 24px;
+  }
+  .date ul {
+    border: solid 1px red;
+    margin-bottom: -20px;
+  }
+  .date li {
+    border: solid 1px blue;
+  }
+  .screen_row p {
+    font-size: 24px;
+  }
+  .discount {
+    font-size: 48px;
+    margin-left: -40px;
+  }
+  .sunglasses_collection p {
+    width: 185px;
+    line-height: 28px;
+    margin-top: 50%;
+    margin-left: -30px;
+  }
+  .discover_button {
+    margin-top: 200px;
+    margin-left: 10px;
+  }
+  .jacket_collection {
+    margin-bottom: 0;
+  }
+  .model_sunglass img {
+    margin-top: 56px;
+  }
+  .jacket_collection img {
+    margin-top: 65px;
+  }
+
 
 
 
