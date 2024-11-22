@@ -352,7 +352,9 @@ footer {
 .yellow_footer {
     display: none;
 }
-
+.arrow_flex {
+    display: none;
+}
 @media screen and (min-width:700px){
     .first_section {
         height: 763px;
@@ -373,7 +375,7 @@ footer {
      width: 60%;
    }
    .row {
-    margin-top: 128px;
+    margin-top: 95px;
    }
    .header_image {
     width: 50%;
@@ -603,6 +605,21 @@ footer {
   .product_caption {
     width: 100%;
     padding: 10px 0px 30px 0px;
+  }
+  .arrow_flex {
+    display: flex;
+    position: absolute;
+    top:495px;
+    left: 45px;
+    padding-right: 5px;
+  }
+  .arrow {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: solid 1px white;
+    margin-left: 10px;
   }
  
  
