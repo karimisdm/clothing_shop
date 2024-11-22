@@ -89,6 +89,33 @@ body {
     right: 25%;
     top: 130%;
 }
+.page_marker ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.page_marker {
+  position: absolute;
+  right: 162px;
+  top: 547px;
+}
+.marker {
+  width: 18px;
+  height: 18px;
+  border-radius: 20px;
+  background-color: white;
+}
+.unmarker {
+  width: 14px;
+  height: 14px;
+  border-radius: 20px;
+  background-color:#FFFFFF33;
+}
+.page_marker li {
+  padding: 0px 5px;
+}
 .social_links {
     background-color:#FDDE67;
 }
@@ -398,6 +425,11 @@ footer {
    .img_person {
     top: 0;
     left: 20%;
+   }
+   .page_marker{
+      transform: rotate(90deg);
+      top: 140px;
+      left: 650px;
    }
    .header_price {
     display: block;
