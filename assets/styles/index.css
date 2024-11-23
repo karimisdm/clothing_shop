@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: Lato;
   color: white;
+  overflow-x: hidden;
 }
 
 .container {
@@ -317,11 +318,10 @@ body {
   display: inline-block;
 }
 
-.heart_icon {
+.heart_icon, .specil_heart_icon {
   margin-left: 83%;
   margin-top: 13px;
 }
-
 .pro_style {
   margin-left: 20%;
 }
@@ -846,10 +846,18 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
     padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 20px;
+    padding-right: 43px;
+    padding-bottom: 12px;
+  }
+  .specil_heart_icon {
+    margin-top: 13px;
+  }
+  .off_shirt {
+    margin-top: 13px;
+  }
+  img {
+    /* max-width: 100%; */
   }
 
 
