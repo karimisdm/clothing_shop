@@ -1,94 +1,117 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  --circle-color: #1B2D22;
+  --button-color: #FDDE67;
+  --discover-button: #181818;
+  --footer-color: #3B5F47;
 }
+
 body {
-    margin: 0;
-    font-family: Lato;
-    color: white;
+  margin: 0;
+  font-family: Lato;
+  color: white;
 }
+
 .container {
-    width: 1320px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
+  width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
 }
+
 .first_section {
-    background: linear-gradient(110.6deg, #2A4032 0.81%, #3A5E46 100%);
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
+  background: linear-gradient(110.6deg, #2A4032 0.81%, #3A5E46 100%);
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
 }
+
 .row {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
 }
+
 .header_text {
-    width: 538px;
-    max-width: 100%;
-    padding-left: 15px;
-    padding-top: 27px;
+  width: 538px;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-top: 27px;
 }
+
 .header_text h1 {
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 50px;
-    margin: 0;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 50px;
+  margin: 0;
 }
-.season_sale, .history {
-    color: #FFFFFFCC;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21.6px;
-}
+
+.season_sale,
 .history {
-    font-size: 30px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 36px;
-    color: #FFFFFF4D;   
+  color: #FFFFFFCC;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
 }
+
+.history {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 36px;
+  color: #FFFFFF4D;
+}
+
 .header_bottom {
-    width: 180px;
-    height: 49px;
-    border-radius: 6px;
-    padding: 16px 40px 16px 40px;
-    background-color: #FDDE67;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.8px;
-    color:#181818;
-    position: absolute;
-    z-index: 5;
-    top: 120%;
+  width: 180px;
+  height: 49px;
+  border-radius: 6px;
+  padding: 16px 40px 16px 40px;
+  background-color: var(--button-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  color: #181818;
+  position: absolute;
+  z-index: 5;
+  top: 120%;
 }
+
+.header_bottom:hover {
+  background-color: #FFEB9D;
+}
+
 .header-image {
-    position: relative;
+  position: relative;
 }
+
 .circle1 {
-    width: 198px;
-    height: 198px;
-    border-radius: 100%;
-    background-color: #1B2D22;
-    position: absolute;
-    top: 150%;
-    right: 13%;
+  width: 198px;
+  height: 198px;
+  border-radius: 100%;
+  background-color: var(--circle-color);
+  position: absolute;
+  top: 150%;
+  right: 13%;
 }
+
 .circle2 {
-    width: 198px;
-    height: 198px;
-    border-radius: 100%;
-    background-color: #1B2D22;
-    position: absolute;
-    top: 200%;
-    right: 45%;
+  width: 198px;
+  height: 198px;
+  border-radius: 100%;
+  background-color: var(--circle-color);
+  position: absolute;
+  top: 200%;
+  right: 45%;
 }
+
 .img_person {
-    position: absolute;
-    right: 25%;
-    top: 130%;
+  position: absolute;
+  right: 25%;
+  top: 130%;
 }
+
 .page_marker ul {
   list-style-type: none;
   margin: 0;
@@ -96,342 +119,419 @@ body {
   display: flex;
   align-items: center;
 }
+
 .page_marker {
   position: absolute;
   right: 162px;
   top: 547px;
 }
+
 .marker {
   width: 18px;
   height: 18px;
   border-radius: 20px;
   background-color: white;
 }
+
 .unmarker {
   width: 14px;
   height: 14px;
   border-radius: 20px;
-  background-color:#FFFFFF33;
+  background-color: #FFFFFF33;
 }
+
 .page_marker li {
   padding: 0px 5px;
 }
+
 .social_links {
-    background-color:#FDDE67;
+  background-color: var(--button-color);
 }
-.social_links ul, .special_marks ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 15px;
+
+.social_links ul,
+.special_marks ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px;
 }
-.social_links img, .special_marks img {
-    display: block;
-    width: 100%;
-    height: auto;
+
+.social_links img,
+.special_marks img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
+
 .special_marks {
-    background-color: #181818;
+  background-color: #181818;
 }
+
 .middle_section {
-    color: black;
-    padding: 0px 15px;
+  color: black;
+  padding: 0px 15px;
 }
+
 .jacket_collection {
-    border-radius: 24px;
-    background-color: #C5C2CA;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    display: flex;
+  border-radius: 24px;
+  background-color: #C5C2CA;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  display: flex;
 }
+
 .jacket_collection img {
-    display: block;
-    margin-left: 30%;
-    margin-top: 16%;
+  display: block;
+  margin-left: 30%;
+  margin-top: 16%;
 }
+
 .jacket_collection p {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 18px;
-    margin: 0;
-    padding-top: 15px;
-    padding-left: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 15px;
 }
+
 .model_jacket {
-    flex-shrink: 1;
-    width: 70%;
+  flex-shrink: 1;
+  width: 70%;
 }
+
 .discover_butt {
-    width: 167px;
-    height: 49px;
-    padding: 16px 40px 16px 40px;
-    border-radius: 6px;
-    background-color: #181818;
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.8px;
-    color: white;
-    margin-top: 98%;
-    margin-left: -80px;
+  width: 167px;
+  height: 49px;
+  padding: 16px 40px 16px 40px;
+  border-radius: 6px;
+  background-color: var(--discover-button);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  color: white;
+  margin-top: 98%;
+  margin-left: -80px;
 }
+
+.discover_butt:hover {
+  background-color: #1E1E1E;
+}
+
 .sunglasses_collection {
-    border-radius: 24px;
-    background-color: #FDDE67;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-around;
+  border-radius: 24px;
+  background-color: var(--button-color);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
 }
-.sunglasses_collection p{
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 18px;
-    margin: 0;
-    width: 139px;
-    height: 36px;
-    padding-top: 15px;
-    padding-bottom: 80%;
-    text-align: center;
-    margin-left: -40px;
+
+.sunglasses_collection p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  margin: 0;
+  width: 139px;
+  height: 36px;
+  padding-top: 15px;
+  padding-bottom: 80%;
+  text-align: center;
+  margin-left: -40px;
 }
+
 .model_sunglass img {
-    display: block; 
-    margin-top: 25px;   
+  display: block;
+  margin-top: 25px;
 }
+
 .text_sunglass {
-    padding-left: 15px;
+  padding-left: 15px;
 }
+
 .discount {
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.13px;
-    text-align: center;
-    width: 105px;
-    margin-left: -20px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  text-align: center;
+  width: 105px;
+  margin-left: -20px;
 }
+
 .discover_button {
-    width: 167px;
-    height: 49px;
-    padding: 16px 40px 16px 40px;
-    border-radius: 6px;
-    background-color: #181818;
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.8px;
-    text-align: left;
-    color: white;
-    margin-left: -80px;
-    margin-top: 62px;
+  width: 167px;
+  height: 49px;
+  padding: 16px 40px 16px 40px;
+  border-radius: 6px;
+  background-color: var(--discover-button);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  color: white;
+  margin-left: -80px;
+  margin-top: 62px;
+}
+
+.discover_button:hover {
+  background-color: #1E1E1E;
 }
 
 .third_section {
-    color: black;
-    background-color: #E9E9E9;
-    padding-left: 15px;
-    margin-top: 30px;
-}
-.third_section h2, .middle_section h2 {
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 32px;
-    padding-top: 5px;
-}
-.best_clothes ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-.product {
-    width: 220px;
-    height: 220px;
-    border-radius: 24px;
-    background-color: white;
-}
-.product img {
-    display: inline-block;
-}
-.heart_icon {
-    margin-left: 83%;
-    margin-top: 13px;
-}
-.pro_style {
-    margin-left: 20%;
-}
-.product_caption {
-    width: 220px;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 3px;
-}
-.icon_shoppingCart img {
-    display: inline-block;
-    margin-top: 15%;
-}
-.icon_shoppingCart a {
-    display: inline-block;
-    background-color:#FDDE67;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    border-radius: 6px;
-    margin-top: 10px;
-}
-.product_name {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18.75px;   
-}
-.product_caption_text {
-    width: 155px;
-}
-.product_price {
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 16.41px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #00000099;
-}
-.initial_price {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 18.75px;
-    text-align: left;
-    text-decoration-line: line-through;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color:#00000033;
-    padding-right: 5px;
+  color: black;
+  background-color: #E9E9E9;
+  padding-left: 15px;
+  margin-top: 30px;
 }
 
-.best_clothes li{
-   margin-right: 30px;
-   padding-bottom: 20px;
+.third_section h2,
+.middle_section h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-top: 5px;
 }
+
+.best_clothes ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  width: 220px;
+  height: 220px;
+  border-radius: 24px;
+  background-color: white;
+}
+
+.product img {
+  display: inline-block;
+}
+
+.heart_icon {
+  margin-left: 83%;
+  margin-top: 13px;
+}
+
+.pro_style {
+  margin-left: 20%;
+}
+
+.product_caption {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 3px;
+}
+
+.icon_shoppingCart img {
+  display: inline-block;
+  margin-top: 15%;
+}
+
+.icon_shoppingCart a {
+  display: inline-block;
+  background-color: var(--button-color);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.product_name {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+}
+
+.product_caption_text {
+  width: 155px;
+}
+
+.product_price {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16.41px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #00000099;
+}
+
+.initial_price {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18.75px;
+  text-align: left;
+  text-decoration-line: line-through;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #00000033;
+  padding-right: 5px;
+}
+
+.best_clothes li {
+  margin-right: 30px;
+  padding-bottom: 20px;
+}
+
 .best_clothes {
-   overflow-x: scroll;
+  overflow-x: scroll;
 }
+
 footer {
-    background-color:#3B5F47;
-    text-align: center;
+  background-color: var(--footer-color);
+  text-align: center;
 }
+
 .last_section {
-    padding-bottom: 32px;
+  padding-bottom: 32px;
 }
+
 .text_sale {
-    margin: 0;
-    padding: 30px 0px;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 32px;
+  margin: 0;
+  padding: 30px 0px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
 }
+
 .date ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
+
 .date {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .date_box {
-    width: 54px;
-    height: 56px;
-    border-radius: 8px;
-    padding: 12px 0px;
-    background-color: #18181840;
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
+  width: 54px;
+  height: 56px;
+  border-radius: 8px;
+  padding: 12px 0px;
+  background-color: #18181840;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
 }
+
 .time {
-    font-family: Roboto;
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 14.06px;
-    padding-top: 5px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14.06px;
+  padding-top: 5px;
 }
+
 .header_price {
-    display: none;
+  display: none;
 }
+
 .off_circle {
-    display: none;
+  display: none;
 }
-.header_titles{
-    display: none;
+
+.header_titles {
+  display: none;
 }
+
 .yellow_footer {
-    display: none;
+  display: none;
 }
+
 .arrow_flex {
-    display: none;
+  display: none;
 }
-@media screen and (min-width:700px){
-    .first_section {
-        height: 763px;
-    }
-   .social_links {
+
+.button_product {
+  display: none;
+}
+
+.off_shirt {
+  display: none;
+}
+
+@media screen and (min-width:700px) {
+  .first_section {
+    height: 763px;
+  }
+
+  .social_links {
     display: none;
-   }
-   .screen_row {
+  }
+
+  .screen_row {
     display: flex;
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: space-between;
-   }
-   .jacket_collection {
-     width: 30%;
-   }
-   .sunglasses_collection {
-     width: 60%;
-   }
-   .row {
+  }
+
+  .jacket_collection {
+    width: 30%;
+  }
+
+  .sunglasses_collection {
+    width: 60%;
+  }
+
+  .row {
     margin-top: 95px;
-   }
-   .header_image {
+  }
+
+  .header_image {
     width: 50%;
     height: 90px;
     position: relative;
     margin-top: -170px;
-   }
-   .circle1 {
+  }
+
+  .circle1 {
     top: 100%;
     left: 40%;
     width: 318px;
     height: 318px;
-   }
-   .circle2 {
+  }
+
+  .circle2 {
     top: 180%;
     left: 10%;
     width: 318px;
     height: 318px;
-   }
-   .img_person {
+  }
+
+  .img_person {
     top: 0;
     left: 20%;
-   }
-   .page_marker{
-      transform: rotate(90deg);
-      top: 140px;
-      left: 650px;
-   }
-   .header_price {
+  }
+
+  .page_marker {
+    transform: rotate(90deg);
+    top: 140px;
+    left: 650px;
+  }
+
+  .header_price {
     display: block;
     position: absolute;
     font-size: 36px;
@@ -440,56 +540,65 @@ footer {
     width: 84px;
     left: 7%;
     top: 70%;
-   }
-   .off_circle {
+  }
+
+  .off_circle {
     display: block;
     position: absolute;
     width: 110px;
     height: 110px;
     border-radius: 100%;
-    background-color: #FDDE67;
+    background-color: var(--button-color);
     text-align: center;
     padding-top: 24px;
     padding-left: 9px;
     left: 20%;
     top: 110%;
-   }
-   .off_circle span {
+  }
+
+  .off_circle span {
     font-family: Roboto;
     font-size: 26px;
     font-weight: 700;
     line-height: 30.47px;
-    color:#181818;
-   }
-   .header_text h1 {
+    color: #181818;
+  }
+
+  .header_text h1 {
     font-size: 112px;
     line-height: 100px;
     letter-spacing: 0.13em;
     padding-bottom: 10px;
-   }
-   .history {
+  }
+
+  .history {
     font-size: 60px;
-    color:#FFFFFF4D;
-   }
-   .season_sale {
+    color: #FFFFFF4D;
+  }
+
+  .season_sale {
     font-size: 25px;
     line-height: 30px;
     color: #FFFFFFCC;
-   }
-   .header_titles {
+  }
+
+  .header_titles {
     display: block;
     padding-top: 10px;
-   }
-   .header_titles ul {
+  }
+
+  .header_titles ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: space-between;
-   }
+  }
+
   .links {
     width: 288px;
   }
+
   .links a {
     text-decoration: none;
     color: white;
@@ -498,65 +607,82 @@ footer {
     line-height: 40px;
     display: block;
   }
+
   .links a:hover {
     color: #FFFFFF4D;
   }
+
   .etalon {
     font-size: 36px;
     font-weight: 900;
     line-height: 40px;
   }
+
   .basket_screen img {
     display: block;
   }
+
   .basket_screen a {
     display: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 20px;
     padding: 12px;
-    background-color: #FDDE67;
+    background-color: var(--button-color);
   }
+
   .special_marks li:nth-child(1) img {
     width: 165px;
   }
+
   .special_marks li:nth-child(2) img {
     width: 258px;
   }
+
   .special_marks li:nth-child(3) img {
     width: 112px;
   }
+
   .special_marks li:nth-child(4) img {
     width: 60px;
   }
+
   .special_marks li:nth-child(5) img {
     width: 166px;
   }
+
   .special_marks li:nth-child(6) img {
     width: 145px;
   }
+
   .best_clothes {
     overflow: hidden;
+    padding-left: 15px;
   }
+
   footer {
     display: flex;
   }
+
   .last_section {
     flex-grow: 2;
     padding-bottom: 80px;
     padding-top: 26px;
   }
+
   .yellow_footer {
     display: block;
-    background-color: #FDDE67;
+    background-color: var(--button-color);
     position: relative;
     width: 35%;
   }
+
   .yellow_footer img {
     position: absolute;
     left: 50px;
     top: 95px;
   }
+
   .big_off {
     font-family: Roboto;
     font-size: 64px;
@@ -567,12 +693,15 @@ footer {
     left: 60px;
     top: 40px;
   }
+
   .text_sale {
     font-size: 64px;
   }
+
   .date {
     font-size: 64px;
   }
+
   .date_box {
     font-size: 64px;
     line-height: 48px;
@@ -580,71 +709,109 @@ footer {
     height: 100%;
     padding-top: 25px;
   }
+
   .time {
     font-size: 24px;
     padding-top: 14px;
   }
+
   .date ul {
     margin-top: 45px;
   }
+
   .date li {
     width: 20%;
   }
+
   .screen_row p {
     font-size: 24px;
   }
+
   .discount {
     font-size: 48px;
     margin-left: -40px;
   }
+
   .sunglasses_collection p {
     width: 185px;
     line-height: 28px;
     margin-top: 50%;
     margin-left: -30px;
   }
+
   .discover_button {
     margin-top: 200px;
     margin-left: 10px;
   }
+
   .discover_butt {
     margin-top: 482px;
   }
+
   .jacket_collection {
     margin-bottom: 0;
   }
+
   .model_sunglass img {
     margin-top: 56px;
   }
+
   .jacket_collection img {
     margin-top: 65px;
   }
+
   .product {
     width: 100%;
     height: auto;
     padding-bottom: 30px;
   }
+
   .pro_style {
     width: 214px;
     margin-left: 10%;
   }
+
   .best_clothes li {
     width: 20%;
   }
+
   .heart_icon {
     padding-bottom: 10px;
   }
+
   .product_caption {
     width: 100%;
     padding: 10px 0px 30px 0px;
   }
+
+  .button_product {
+    display: block;
+    width: 207px;
+    height: 49px;
+    border-radius: 6px;
+    padding: 16px 40px;
+    background-color: var(--discover-button);
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .third_section {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
   .arrow_flex {
     display: flex;
     position: absolute;
-    top:495px;
+    top: 495px;
     left: 45px;
     padding-right: 5px;
   }
+
   .arrow {
     display: block;
     width: 32px;
@@ -653,11 +820,43 @@ footer {
     border: solid 1px white;
     margin-left: 10px;
   }
- 
- 
+
+  .arrow:hover {
+    border: solid 1px #FFFFFF33;
+  }
+
+  .arrow:hover img {
+    filter: brightness(0.4);
+  }
+
+  .off_shirt {
+    display: block;
+    width: 41px;
+    height: 20px;
+    border-radius: 6px;
+    padding: 3px 6px;
+    background-color: #3A5E46;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14.06px;
+  }
+
+  .special_product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+  }
 
 
 
 
-    
+
+
+
+
 }
